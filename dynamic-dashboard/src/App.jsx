@@ -6,8 +6,6 @@ import Task from "./components/Task"
 import Date from "./components/DateDisplay"
 import TaskTotals from "./components/TaskTotals"
 
-
-
 let taskArray = 
 [
   {
@@ -28,9 +26,7 @@ let taskArray =
 ];
 
 
-
 function App() {
-
   return (
     <div>
       <Date />
@@ -44,28 +40,3 @@ function App() {
 
 export default App;
 
-/*
-          {taskArray.map(taskArrayElement => (
-              <li key={task.id} style={{ textDecoration: taskArrayElement.completed 
-              ? 'line-through' 
-              : 'none' }}>
-              {taskArrayElement.taskName}: {taskArrayElement.completed ? 'Completed' : 'Pending'}
-              </li>
-            ))}
-*/
-
-/*
-      <h2>Tasks</h2>
-        <ul>  
-            {taskArray.map((taskArrayElement) => 
-            (
-              <li key={taskArrayElement.id} style={{ textDecoration: taskArrayElement.completed 
-              ? 'line-through' 
-              : 'none' }}>
-              {taskArrayElement.taskName}: {taskArrayElement.completed ? 'Completed' : 'Pending'}
-              </li>
-            ))}
-
-  
-        </ul>
-*/
